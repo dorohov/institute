@@ -1,0 +1,29 @@
+body {
+    
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+svg,
+img {
+    vertical-align: middle;
+}
