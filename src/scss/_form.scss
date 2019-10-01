@@ -1,0 +1,42 @@
+.form {
+    &-field {
+        position: relative;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            border: 1px solid #E3EAFD;
+            border-radius: 3px;
+            box-sizing: border-box;
+            padding: 12px 30px;
+            font-size: 14px;
+            color: #334059;
+            &::placeholder {
+                color: rgba(#334059, .75);
+            }
+            &:focus {
+                border-color: $c-primary;
+            }
+        }
+        &.is--navbar-search {
+            input[type="text"] {
+                height: 36px;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 35px;
+            }
+            button {
+                padding: 0;
+                border: 0;
+                background: none;
+                cursor: pointer;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                margin-top: -11px;
+                svg {
+                    fill: $c-primary;
+                }
+            }
+        }
+    }
+}

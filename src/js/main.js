@@ -10,7 +10,7 @@
                 height100Per: '.is--h100'
             }
 
-            var padding = document.getElementsByClassName('navbar__inner')[0].getBoundingClientRect()
+            var padding = document.getElementsByClassName('container')[0].getBoundingClientRect()
             var height = $('.navbar').innerHeight() + $('.footer').innerHeight()
 
             $(classes.paddingLeft).css({
@@ -44,30 +44,6 @@
             $('html,body').animate({scrollTop: $(aid).offset().top - $('.navbar').innerHeight()},'slow');
         })
 
-        $('.sreviews__list__inner').slick({
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            prevArrow: '',
-            nextArrow: '',
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                        autoplay: true,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true
-                    }
-                }
-            ]
-        })
 
         $('form').parsley()
 
