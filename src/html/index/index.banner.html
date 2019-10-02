@@ -1,3 +1,133 @@
 <div class="banner">
-    
+    <div class="banner__inner container">
+        <div class="banner__carousel">
+            <div class="banner__carousel__inner">
+                <div class="banner__carousel__items">
+                    <a href="#" class="banner__carousel__item">
+                        <img src="img/slide.svg" alt="">
+                    </a>
+                    <a href="#" class="banner__carousel__item">
+                        <img src="img/slide.svg" alt="">
+                    </a>
+                    <a href="#" class="banner__carousel__item">
+                        <img src="img/slide.svg" alt="">
+                    </a>
+                    <a href="#" class="banner__carousel__item">
+                        <img src="img/slide.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner__news">
+            <div class="banner__news__inner">
+                <div class="banner__news__heading">
+                    <div class="banner__news__heading__left">
+                        Новости
+                        @@include('../components/component.svg.html', {"name": "rss"})
+                    </div>
+                    <div class="banner__news__heading__right">
+                        <a href="#">
+                            Все новости
+                            @@include('../components/component.svg.html', {"name": "news_arrow"})
+                        </a>
+                    </div>
+                </div>
+                <div class="banner__news__list">
+                    <a href="#" class="banner__news__list__line">
+                        <div class="banner__news__list__line__date">10. 08. 2019 г.</div>
+                        <div class="banner__news__list__line__title">«Былинный стих: драма или <br> анжамбеман?»</div>
+                    </a>
+                    <a href="#" class="banner__news__list__line">
+                        <div class="banner__news__list__line__date">07. 12. 2019 г.</div>
+                        <div class="banner__news__list__line__title">Из нетрадиционных <br> способов</div>
+                    </a>
+                    <a href="#" class="banner__news__list__line">
+                        <div class="banner__news__list__line__date">11. 12. 2019 г.</div>
+                        <div class="banner__news__list__line__title">Скрытый смысл, без использования <br> формальных признаков</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="banner__cal">
+            <div class="banner__cal__inner">
+                <div class="banner__cal__heading">Календарь</div>
+            </div>
+            <div class="banner__cal__my">
+                <button class="is--prev">@@include('../components/component.svg.html', {"name": "calendar_arrow"})</button>
+                <span>Август 2019</span>
+                <button class="is--next">@@include('../components/component.svg.html', {"name": "calendar_arrow"})</button>
+            </div>
+            <div class="banner__cal__m">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ПН</th>
+                            <th>ВТ</th>
+                            <th>СР</th>
+                            <th>ЧТ</th>
+                            <th>ПТ</th>
+                            <th>СБ</th>
+                            <th>ВС</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#">29</a></td>
+                            <td><a href="#">30</a></td>
+                            <td><a href="#">31</a></td>
+                            <td><a href="#" class="is--t">1</a></td>
+                            <td><a href="#" class="is--t">2</a></td>
+                            <td><a href="#" class="is--w">3</a></td>
+                            <td><a href="#" class="is--w">4</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="is--t">5</a></td>
+                            <td><a href="#" class="is--t">6</a></td>
+                            <td><a href="#" class="is--t">7</a></td>
+                            <td><a href="#" class="is--t">8</a></td>
+                            <td><a href="#" class="is--t">9</a></td>
+                            <td><a href="#" class="is--w">10</a></td>
+                            <td><a href="#" class="is--w">11</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="is--t">12</a></td>
+                            <td><a href="#" class="is--t">13</a></td>
+                            <td><a href="#" class="is--t">14</a></td>
+                            <td><a href="#" class="is--t">15</a></td>
+                            <td><a href="#" class="is--t">16</a></td>
+                            <td><a href="#" class="is--w">17</a></td>
+                            <td><a href="#" class="is--w">18</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="is--t">19</a></td>
+                            <td><a href="#" class="is--t">20</a></td>
+                            <td><a href="#" class="is--t">21</a></td>
+                            <td><a href="#" class="is--t">22</a></td>
+                            <td><a href="#" class="is--t">23</a></td>
+                            <td><a href="#" class="is--w">24</a></td>
+                            <td><a href="#" class="is--w">25</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="is--t">26</a></td>
+                            <td><a href="#" class="is--t">27</a></td>
+                            <td><a href="#" class="is--t">28</a></td>
+                            <td><a href="#" class="is--t">29</a></td>
+                            <td><a href="#" class="is--t">30</a></td>
+                            <td><a href="#" class="is--w">31</a></td>
+                            <td><a href="#" class="is--w">1</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="is--t">2</a></td>
+                            <td><a href="#" class="is--t">3</a></td>
+                            <td><a href="#" class="is--t">4</a></td>
+                            <td><a href="#" class="is--t">5</a></td>
+                            <td><a href="#" class="is--t">6</a></td>
+                            <td><a href="#" class="is--w">7</a></td>
+                            <td><a href="#" class="is--w">8</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>

@@ -61,16 +61,47 @@
                 </button>
             </div>
             <div class="navbar__bottom__menu">
-                <ul>
-                    
+                <ul class="_navbar-menu">
+                    <li><a href="#">Сведения об образовательной <br> организации</a></li>
+                    <li><a class="is--dropdown" data-dropdown="1" href="#">Образовательная <br> деятельность</a></li>
+                    <li><a class="is--dropdown" data-dropdown="2" href="#">Научно-методическая <br> деятельность</a></li>
+                    <li><a href="#">Сопровождение <br> системы образования</a></li>
+                    <li><a href="#">Конкурсы, <br> олимпиады</a></li>
+                    <li><a href="#">Одаренные <br> дети</a></li>
+                    <li><a href="#">Аттестация</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="navbar__dropdown">
+    <div class="navbar__dropdown is--on">
         <div class="navbar__dropdown__inner container">
-            <ul>
-                <li><a href="#">Календарный учебный график</a></li>
+            <ul class="_navbar-menu" data-dropdown="1" data-level="on">
+                <li><a href="#">1Календарный учебный график</a></li>
+                <li><a class="is--dropdown" data-dropdown="11" href="#">Программы повышения квалификации</a></li>
+                <li><a href="#">Программы профессиональной переподготовки</a></li>
+                <li><a href="#">Дистанционное обучение</a></li>
+                <li><a href="#">Образцы документов на зачисление</a></li>
+            </ul>
+            <ul class="_navbar-menu" data-dropdown="2" data-level="on">
+                <li><a href="#">2Календарный учебный график</a></li>
+                <li><a class="is--dropdown" data-dropdown="12" href="#">Программы повышения квалификации</a></li>
+                <li><a href="#">Программы профессиональной переподготовки</a></li>
+                <li><a href="#">Дистанционное обучение</a></li>
+                <li><a href="#">Образцы документов на зачисление</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar__dropdown is--tw">
+        <div class="navbar__dropdown__inner container">
+            <ul class="_navbar-menu" data-dropdown="11" data-level="tw">
+                <li><a href="#">3Календарный учебный график</a></li>
+                <li><a href="#">Программы повышения квалификации</a></li>
+                <li><a href="#">Программы профессиональной переподготовки</a></li>
+                <li><a href="#">Дистанционное обучение</a></li>
+                <li><a href="#">Образцы документов на зачисление</a></li>
+            </ul>
+            <ul class="_navbar-menu" data-dropdown="12" data-level="tw">
+                <li><a href="#">4Календарный учебный график</a></li>
                 <li><a href="#">Программы повышения квалификации</a></li>
                 <li><a href="#">Программы профессиональной переподготовки</a></li>
                 <li><a href="#">Дистанционное обучение</a></li>

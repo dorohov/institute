@@ -7,75 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Главная — Институт развития образования</title>
     <link rel="stylesheet" href="dist/css/style.css">
-    <script>
-        var mainMenu = [{
-                    "title": "Сведения об образовательной <br> организации",
-                    "link": "#",
-                    "parents": false
-                },
-                {
-                    "title": "Образовательная <br> деятельность",
-                    "link": "#",
-                    "parents": [{
-                            "title": "Календарный учебный график",
-                            "link": "#",
-                            "parents": false
-                        },
-                        {
-                            "title": "Программы повышения квалификации",
-                            "link": "#",
-                            "parents": false
-                        },
-                        {
-                            "title": "Программы профессиональной переподготовки",
-                            "link": "#",
-                            "parents": false
-                        },
-                        {
-                            "title": "Дистанционное обучение",
-                            "link": "#",
-                            "parents": false
-                        },
-                        {
-                            "title": "Образцы документов на зачисление",
-                            "link": "#",
-                            "parents": false
-                        }
-                    ]
-                },
-                {
-                    "title": "Научно-методическая <br> деятельность",
-                    "link": "#",
-                    "parents": false
-                },
-                {
-                    "title": "Сопровождение <br> системы образования",
-                    "link": "#",
-                    "parents": false
-                },
-                {
-                    "title": "Конкурсы, <br> олимпиады",
-                    "link": "#",
-                    "parents": false
-                },
-                {
-                    "title": "Одаренные <br> дети ",
-                    "link": "#",
-                    "parents": false
-                },
-                {
-                    "title": "Аттестация",
-                    "link": "#",
-                    "parents": false
-                }
-            ],
-            dropdownMenu = [{
-
-            }],
-            mobileMenu = [{
-
-            }]
-    </script>
 </head>
 
 <body>
@@ -154,16 +85,47 @@
                     </button>
                 </div>
                 <div class="navbar__bottom__menu">
-                    <ul>
-
+                    <ul class="_navbar-menu">
+                        <li><a href="#">Сведения об образовательной <br> организации</a></li>
+                        <li><a class="is--dropdown" data-dropdown="1" href="#">Образовательная <br> деятельность</a></li>
+                        <li><a class="is--dropdown" data-dropdown="2" href="#">Научно-методическая <br> деятельность</a></li>
+                        <li><a href="#">Сопровождение <br> системы образования</a></li>
+                        <li><a href="#">Конкурсы, <br> олимпиады</a></li>
+                        <li><a href="#">Одаренные <br> дети</a></li>
+                        <li><a href="#">Аттестация</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="navbar__dropdown">
+        <div class="navbar__dropdown is--on">
             <div class="navbar__dropdown__inner container">
-                <ul>
-                    <li><a href="#">Календарный учебный график</a></li>
+                <ul class="_navbar-menu" data-dropdown="1" data-level="on">
+                    <li><a href="#">1Календарный учебный график</a></li>
+                    <li><a class="is--dropdown" data-dropdown="11" href="#">Программы повышения квалификации</a></li>
+                    <li><a href="#">Программы профессиональной переподготовки</a></li>
+                    <li><a href="#">Дистанционное обучение</a></li>
+                    <li><a href="#">Образцы документов на зачисление</a></li>
+                </ul>
+                <ul class="_navbar-menu" data-dropdown="2" data-level="on">
+                    <li><a href="#">2Календарный учебный график</a></li>
+                    <li><a class="is--dropdown" data-dropdown="12" href="#">Программы повышения квалификации</a></li>
+                    <li><a href="#">Программы профессиональной переподготовки</a></li>
+                    <li><a href="#">Дистанционное обучение</a></li>
+                    <li><a href="#">Образцы документов на зачисление</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar__dropdown is--tw">
+            <div class="navbar__dropdown__inner container">
+                <ul class="_navbar-menu" data-dropdown="11" data-level="tw">
+                    <li><a href="#">3Календарный учебный график</a></li>
+                    <li><a href="#">Программы повышения квалификации</a></li>
+                    <li><a href="#">Программы профессиональной переподготовки</a></li>
+                    <li><a href="#">Дистанционное обучение</a></li>
+                    <li><a href="#">Образцы документов на зачисление</a></li>
+                </ul>
+                <ul class="_navbar-menu" data-dropdown="12" data-level="tw">
+                    <li><a href="#">4Календарный учебный график</a></li>
                     <li><a href="#">Программы повышения квалификации</a></li>
                     <li><a href="#">Программы профессиональной переподготовки</a></li>
                     <li><a href="#">Дистанционное обучение</a></li>
@@ -174,7 +136,145 @@
     </div>
     <main>
         <div class="banner">
-
+            <div class="banner__inner container">
+                <div class="banner__carousel">
+                    <div class="banner__carousel__inner">
+                        <div class="banner__carousel__items">
+                            <a href="#" class="banner__carousel__item">
+                                <img src="img/slide.svg" alt="">
+                            </a>
+                            <a href="#" class="banner__carousel__item">
+                                <img src="img/slide.svg" alt="">
+                            </a>
+                            <a href="#" class="banner__carousel__item">
+                                <img src="img/slide.svg" alt="">
+                            </a>
+                            <a href="#" class="banner__carousel__item">
+                                <img src="img/slide.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__news">
+                    <div class="banner__news__inner">
+                        <div class="banner__news__heading">
+                            <div class="banner__news__heading__left">
+                                Новости
+                                <svg class="svg-rss-dims svg is--rss">
+                                    <use xlink:href="img/svg/sprites.svg#rss"></use>
+                                </svg>
+                            </div>
+                            <div class="banner__news__heading__right">
+                                <a href="#">
+                                    Все новости
+                                    <svg class="svg-news_arrow-dims svg is--news_arrow">
+                                        <use xlink:href="img/svg/sprites.svg#news_arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="banner__news__list">
+                            <a href="#" class="banner__news__list__line">
+                                <div class="banner__news__list__line__date">10. 08. 2019 г.</div>
+                                <div class="banner__news__list__line__title">«Былинный стих: драма или <br> анжамбеман?»</div>
+                            </a>
+                            <a href="#" class="banner__news__list__line">
+                                <div class="banner__news__list__line__date">07. 12. 2019 г.</div>
+                                <div class="banner__news__list__line__title">Из нетрадиционных <br> способов</div>
+                            </a>
+                            <a href="#" class="banner__news__list__line">
+                                <div class="banner__news__list__line__date">11. 12. 2019 г.</div>
+                                <div class="banner__news__list__line__title">Скрытый смысл, без использования <br> формальных признаков</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner__cal">
+                    <div class="banner__cal__inner">
+                        <div class="banner__cal__heading">Календарь</div>
+                    </div>
+                    <div class="banner__cal__my">
+                        <button class="is--prev"><svg class="svg-calendar_arrow-dims svg is--calendar_arrow">
+                                <use xlink:href="img/svg/sprites.svg#calendar_arrow"></use>
+                            </svg></button>
+                        <span>Август 2019</span>
+                        <button class="is--next"><svg class="svg-calendar_arrow-dims svg is--calendar_arrow">
+                                <use xlink:href="img/svg/sprites.svg#calendar_arrow"></use>
+                            </svg></button>
+                    </div>
+                    <div class="banner__cal__m">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ПН</th>
+                                    <th>ВТ</th>
+                                    <th>СР</th>
+                                    <th>ЧТ</th>
+                                    <th>ПТ</th>
+                                    <th>СБ</th>
+                                    <th>ВС</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">29</a></td>
+                                    <td><a href="#">30</a></td>
+                                    <td><a href="#">31</a></td>
+                                    <td><a href="#" class="is--t">1</a></td>
+                                    <td><a href="#" class="is--t">2</a></td>
+                                    <td><a href="#" class="is--w">3</a></td>
+                                    <td><a href="#" class="is--w">4</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="is--t">5</a></td>
+                                    <td><a href="#" class="is--t">6</a></td>
+                                    <td><a href="#" class="is--t">7</a></td>
+                                    <td><a href="#" class="is--t">8</a></td>
+                                    <td><a href="#" class="is--t">9</a></td>
+                                    <td><a href="#" class="is--w">10</a></td>
+                                    <td><a href="#" class="is--w">11</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="is--t">12</a></td>
+                                    <td><a href="#" class="is--t">13</a></td>
+                                    <td><a href="#" class="is--t">14</a></td>
+                                    <td><a href="#" class="is--t">15</a></td>
+                                    <td><a href="#" class="is--t">16</a></td>
+                                    <td><a href="#" class="is--w">17</a></td>
+                                    <td><a href="#" class="is--w">18</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="is--t">19</a></td>
+                                    <td><a href="#" class="is--t">20</a></td>
+                                    <td><a href="#" class="is--t">21</a></td>
+                                    <td><a href="#" class="is--t">22</a></td>
+                                    <td><a href="#" class="is--t">23</a></td>
+                                    <td><a href="#" class="is--w">24</a></td>
+                                    <td><a href="#" class="is--w">25</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="is--t">26</a></td>
+                                    <td><a href="#" class="is--t">27</a></td>
+                                    <td><a href="#" class="is--t">28</a></td>
+                                    <td><a href="#" class="is--t">29</a></td>
+                                    <td><a href="#" class="is--t">30</a></td>
+                                    <td><a href="#" class="is--w">31</a></td>
+                                    <td><a href="#" class="is--w">1</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="is--t">2</a></td>
+                                    <td><a href="#" class="is--t">3</a></td>
+                                    <td><a href="#" class="is--t">4</a></td>
+                                    <td><a href="#" class="is--t">5</a></td>
+                                    <td><a href="#" class="is--t">6</a></td>
+                                    <td><a href="#" class="is--w">7</a></td>
+                                    <td><a href="#" class="is--w">8</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer class="footer">
