@@ -1,0 +1,60 @@
+.t {
+    &-menu {
+        border-bottom: 1px solid #E3EAFD;
+        &__inner {
+            ul {
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    height: 100%;
+                    a {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        white-space: nowrap;
+                        justify-content: center;
+                        padding: 22px 25px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #334059;
+                        &:hover {
+                            color: #fff;
+                            background: $c-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .t {
+        &-menu {
+            &__inner {
+                ul {
+                    li {
+                        a {
+                            padding: 15px 15px;
+                        }
+                    }
+                }
+            }           
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .t {
+        &-menu {
+            &__inner {
+                display: none;
+            }
+            &__mobile {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+        }
+    }
+}

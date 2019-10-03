@@ -1,0 +1,41 @@
+<div class="in-info">
+    <div class="in-info__inner container">
+        <div class="in-info__heading">
+            <div class="in-info__heading__left">
+                Актуальная информация
+            </div>
+            <div class="in-info__heading__right">
+                @@include('../components/component.btn.html', {
+                    "text": "Все новости",
+                    "url": "#",
+                    "type": "link"
+                })
+            </div>
+        </div>
+        @@include('../simple/simple.docslist.html', {
+            "date": true,
+            "items": [
+                {
+                    "icon": "pdf",
+                    "title": "О проведении октябрьской <br> программы в Сириусе",
+                    "date": "03 июля 2019 г."
+                },
+                {
+                    "icon": "pdf",
+                    "title": "Приказ департамента <br> образования 2918",
+                    "date": "03 июля 2019 г."
+                },
+                {
+                    "icon": "pdf",
+                    "title": "Завершила работу тематическая <br> смета для одаренных детей",
+                    "date": "03 июля 2019 г."
+                },
+                {
+                    "icon": "pdf",
+                    "title": "Важная информация. <br> Обращаем Ваше внимание!",
+                    "date": "03 июля 2019 г."
+                }
+            ]
+        })
+    </div>
+</div>

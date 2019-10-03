@@ -45,6 +45,19 @@
             dots: true,
             autoplay: true
         })
+
+        $('.banner__mcarousel__items').slick({
+            prevArrow: '',
+            nextArrow: '',
+            dots: true,
+            autoplay: true,
+            slidesToShow: 1
+        })
+
+        $('.navbar__bottom__btn button').on('click', function() {
+            $('body').toggleClass('is--bm-open')
+            $(this).toggleClass('is--active')
+        })
         
     })
 })(jQuery);

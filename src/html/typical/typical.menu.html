@@ -1,0 +1,16 @@
+<div class="t-menu">
+    <div class="t-menu__inner container">
+        <ul>
+            @@for(var i = 0; i < items.length; i++) {
+                <li><a href="`+items[i].link+`">`+items[i].title+`</a></li>
+            }
+        </ul>
+    </div>
+    <div class="t-menu__mobile container">
+        @@include('../components/component.btn.html', {
+            "text": "Список категорий",
+            "url": "#",
+            "type": "link"
+        })
+    </div>
+</div>

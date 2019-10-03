@@ -234,6 +234,65 @@
             }
         }
     }
+    &__big {
+        top: 100%;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background: $c-primary;
+        box-shadow: 0px 28px 31px rgba(0, 0, 0, 0.342);
+        padding: 100px 0 70px 0;
+        &__cols {
+            display: flex;
+            margin: 0 -28px;
+        }
+        &__col {
+            max-width: 25%;
+            width: 100%;
+            padding: 0 28px;
+        }
+        &__menu {
+            position: relative;
+            padding-left: 15px;
+            &::before {
+                content: '';
+                width: 1px;
+                height: 100%;
+                background: #fff;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &.is--mb {
+                margin-bottom: 50px;
+            }
+            &__heading {
+                margin-bottom: 20px;
+                a, span {
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+            &__items {
+                ul {
+                    li {
+                        a {
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: #fff;
+                            display: block;
+                            padding: 4px 0;
+                            transition: .25s all ease;
+                            &:hover {
+                                transform: translateX(5px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 ._navbar-menu {

@@ -1,5 +1,88 @@
 <footer class="footer">
-    
+    <div class="footer__inner container">
+        <div class="footer__lc">
+            <div class="footer__lc__logo">
+                <a href="@@pages.index">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="footer__lc__copy">
+                &copy; 2014 БУ ОО ДПО «Институт <br>
+                развития образования»
+            </div>
+        </div>
+        <div class="footer__menus">
+            <div class="footer__menu">
+                <div class="footer__menu__heading footer__heading">Институт</div>
+                <div class="footer__menu__list">
+                    <ul>
+                        <li><a href="#">Институт</a></li>
+                        <li><a href="#">Методическая работа</a></li>
+                        <li><a href="#">Учебная деятельность/СДО ИРО</a></li>
+                        <li><a href="#">Научно - исследовательская деятельность</a></li>
+                        <li><a href="#">Конкурсы, олимпиады</a></li>
+                        <li><a href="#">Аттестация</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu__heading footer__heading">Контакты</div>
+                <div class="footer__menu__list">
+                    <ul>
+                        <li><span>302030, г.Орел, ул. Герцена, 19</span></li>
+                        <li><a href="#">ooiro@yandex.ru</a></li>
+                        <li><a href="tel:550883">55-08-83 (Приемная)</a></li>
+                        <li><a href="tel:550883">55-08-83 (факс.)</a></li>
+                        <li><a href="tel:555884">55-58-84 (Директор)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__social">
+            <div class="footer__heading">Мы в соцсетях</div>
+            <div class="footer__social__inner">
+                <ul>
+                    <li>
+                        <a href="#">
+                            @@include('../components/component.svg.html', {"name": "vk"})
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            @@include('../components/component.svg.html', {"name": "facebook"})
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            @@include('../components/component.svg.html', {"name": "inst"})
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            @@include('../components/component.svg.html', {"name": "twitter"})
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            @@include('../components/component.svg.html', {"name": "youtube"})
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__social__btn">
+                    @@include('component.btn.html', {
+                        "text": "Задать вопрос",
+                        "url": "#",
+                        "type": "link"
+                    })
+                </div>
+            </div>
+        </div>
+        <div class="footer__dorohov">
+            <a href="#">
+                @@include('component.svg.html', {"name": "dorohov"})
+            </a>
+        </div>
+    </div>
 </footer>
 @@include('../modals/modal.main.html')
 @@include('component.scripts.html')

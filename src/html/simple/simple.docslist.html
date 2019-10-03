@@ -1,0 +1,21 @@
+<div class="docslist">
+    <div class="docslist__inner">
+        <div class="docslist__list">
+            @@for(var i = 0; i < items.length; i++) {
+                <div class="docslist__block">
+                    <a href="#" class="docslist__block__inner">
+                        <div class="docslist__block__left">
+                            <span>@@include('../components/component.svg.html', {"name": "`+items[i].icon+`"})</span>
+                        </div>
+                        <div class="docslist__block__right">
+                            <div class="docslist__block__right__title">`+items[i].title+`</div>
+                            @@if(date == true) {
+                                <div class="docslist__block__right__date">`+items[i].date+`</div>
+                            }
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
