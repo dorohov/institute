@@ -24,6 +24,9 @@
     padding: 20px 40px;
     border-radius: 3px;
     transition: .65s all ease;
+    border: 0;
+    cursor: pointer;
+    vertical-align: middle;
     &:hover {
         background: darken($c-primary, 7%);
     }

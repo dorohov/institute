@@ -1,6 +1,10 @@
 (function($) {
     "use strict"
     $(function() {
+
+        $('#overlay').on('click', function() {
+            closeOverlay()
+        })
         
         function setPaddings() {
 
@@ -22,8 +26,15 @@
             $(classes.height100Per).css({
                 minHeight: 'calc(100vh - ' + height + 'px)'
             })
+            $('.is--c-pt').css({
+                paddingTop: $('.navbar').innerHeight()
+            })
             $('main').css({
                 minHeight: 'calc(100vh - ' + height + 'px)'
+            })
+
+            $('body').css({
+                paddingTop: $('.navbar').innerHeight()
             })
 
         }

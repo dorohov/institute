@@ -26,6 +26,9 @@
                 }
             }
         }
+        &__mobile {
+            display: none;
+        }
     }
 }
 
@@ -40,7 +43,7 @@
                         }
                     }
                 }
-            }           
+            }          
         }
     }
 }
@@ -49,11 +52,32 @@
     .t {
         &-menu {
             &__inner {
-                display: none;
+                position: fixed;
+                background: #fff;
+                width: 320px;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 99;
+                padding-top: 150px;
+                ul {
+                    height: auto;
+                    li {
+                        height: auto;
+                        width: 100%;
+                        a {
+                            height: auto;
+                            white-space: normal;
+                            justify-content: flex-start;
+                            border-bottom: 1px solid #E3EAFD;
+                        }
+                    }
+                }
             }
             &__mobile {
                 padding-top: 25px;
                 padding-bottom: 25px;
+                display: block;
             }
         }
     }

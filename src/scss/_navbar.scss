@@ -1,7 +1,12 @@
 .navbar {
     z-index: 9999;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     &__top {
+        position: relative;
+        z-index: 10;
         background: $c-primary;
         &__search {
             max-width: 245px;
@@ -60,6 +65,9 @@
     }
     &__bottom {
         border-bottom: 1px solid #E3EAFD;
+        position: relative;
+        z-index: 10;
+        background: #fff;
         &__inner {
             height: 89px;
             display: flex;
@@ -240,8 +248,14 @@
         left: 0;
         width: 100%;
         background: $c-primary;
-        box-shadow: 0px 28px 31px rgba(0, 0, 0, 0.342);
         padding: 100px 0 70px 0;
+        transform: translateY(-102%);
+        transition: .4s all cubic-bezier(.99,.01,0,1);
+        &__inner {
+            transition: .25s all ease;
+            transition-delay: .4s;
+            opacity: 0;
+        }
         &__cols {
             display: flex;
             margin: 0 -28px;
@@ -299,6 +313,184 @@
     display: none;
 }
 
+.aside {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: .25s all ease;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    &.is--open {
+        .aside {
+            &__main {
+                transform: translateX(-50vw);
+            }
+            &__sub {
+                transform: none;
+            }
+        }
+    }
+    &__inner {
+        position: relative;
+        height: 100%;
+    }
+    &__main {
+        width: 100%;
+        height: 100%;
+        background: url(../../img/aside_bg1.jpg);
+        background-size: cover;
+        padding: 30px 0 50px 0;
+        overflow: auto;
+        transition: .4s all ease;
+        &__menu {
+            padding: 0 15px 0 15px;
+            margin-bottom: 50px;
+            ul {
+                li {
+                    a {
+                        display: block;
+                        padding: 17px 35px 17px 0;
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 17px;
+                        border-bottom: 1px solid rgba(227, 234, 253, 0.15);
+                        position: relative;
+                        &.is--drop {
+                            &::after {
+                                content: url(../../img/aside_arrow.svg);
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                margin-top: -10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__list {
+            margin-bottom: 40px;
+            ul {
+                li {
+                    a, span {
+                        display: block;
+                        padding: 10px 15px;
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &__social {
+            ul {
+                height: 100%;
+                display: flex;
+                li {
+                    height: 100%;
+                    a {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        padding: 0 15px;
+                        svg {
+                            fill: #fff;
+                        }
+                        &:hover {
+                            svg {
+                                fill: #334059;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__sub {
+        width: 100%;
+        height: 100%;
+        background: url(../../img/aside_bg2.jpg);
+        background-size: cover;
+        overflow: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(100vw);
+        transition: .4s all ease;
+        padding: 0 15px 60px 15px;
+        button.is--prev {
+            color: #334059;
+            padding: 0;
+            border: 0;
+            background: none;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 35px 0 30px 0;
+            svg {
+                fill: #334059;
+                margin-right: 10px;
+            }
+        }
+        ul {
+            &.is--menu {
+                display: none;
+                &.is--active {
+                    display: block;
+                }
+                li {
+                    a {
+                        font-weight: 500;
+                        font-size: 14px;
+                        color: #334059;
+                        display: block;
+                        padding: 15px 50px 15px 0;
+                        border-bottom: 1px solid rgba(51, 64, 89, 0.22);
+                        &.is--drop {
+                            position: relative;
+                            &::after {
+                                content: url(../../img/aside_arrow_b.svg);
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                margin-top: -10px;
+                                transition: .25s all ease;
+                            }
+                            &.is--open {
+                                &::after {
+                                    transform: rotate(90deg);
+                                }
+                            }
+                        }
+                    }
+                    ul {
+                        padding-left: 15px;
+                        li {
+                            a {
+                                font-weight: normal;
+                                font-size: 14px;
+                                border-bottom: 0;
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1700px) {
     .navbar {
         &__bottom__menu ul li a,
@@ -332,6 +524,15 @@
                         display: none;
                     }
                 }
+            }
+        }
+        &__big {
+            padding: 50px 0;
+            &__cols {
+                margin: 0 -15px;
+            }
+            &__col {
+                padding: 0 15px;
             }
         }
     }
@@ -374,6 +575,12 @@
                 display: none;
             }
         }
+        &__big {
+            display: none;
+        }
+    }
+    .aside {
+        display: block;
     }
 }
 

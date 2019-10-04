@@ -58,6 +58,37 @@
             $('body').toggleClass('is--bm-open')
             $(this).toggleClass('is--active')
         })
+
+        function openCategoryMM(id) {
+            $('.aside__sub ul.is--menu[data-id="' + id + '"]').css({
+                display: 'block'
+            })
+        }
+
+        function closeCategoryMM() {
+            $('.aside').removeClass('is--open')
+            $('.aside__sub ul.is--menu').css({
+                display: 'none'
+            })
+        }
+
+        $('.aside__main__menu ul li a.is--drop').on('click', function(e) {
+            e.preventDefault()
+            $('.aside').addClass('is--open')
+            openCategoryMM($(this).data('id'))
+        })
+
+        $('.aside__sub button.is--prev').on('click', function() {
+            closeCategoryMM()
+        })
+
+        $('.aside__sub ul.is--menu li ul').hide()
+
+        $('.aside__sub ul li a.is--drop').on('click', function(e) {
+            e.preventDefault()
+            $(this).toggleClass('is--open')
+            $(this).siblings('ul').slideToggle()
+        })
         
     })
 })(jQuery);

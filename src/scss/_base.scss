@@ -1,5 +1,27 @@
 body {
     font-family: 'Rubik';
+    &.is--bm-open {
+        overflow: hidden;
+        .navbar {
+            &__big {
+                box-shadow: 0px 28px 31px rgba(0, 0, 0, 0.342);
+                transform: none;
+                &__inner {
+                    opacity: 1;
+                }
+            }
+        }
+        .aside {
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    &.is--overlay {
+        #overlay {
+            display: block;
+        }
+    }
 }
 
 *,
@@ -26,4 +48,16 @@ img {
 svg,
 img {
     vertical-align: middle;
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(#000, .5);
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
 }

@@ -1,1 +1,7 @@
-<a href="@@url" class="btn">@@text <span class="btn-circle"></span></a>
+@@if(type == 'link') {
+    <a href="@@url" class="btn">@@text <span class="btn-circle"></span></a>
+}
+
+@@if(type == 'button') {
+    <button class="btn">@@text <span class="btn-circle"></span></button>
+}
