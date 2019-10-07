@@ -1,5 +1,9 @@
 <div class="t-menu">
     <div class="t-menu__inner container">
+        <button class="is--close">
+            @@include('../components/component.svg.html', {"name": "aside_prev"})
+            Закрыть
+        </button>
         <ul>
             @@for(var i = 0; i < items.length; i++) {
                 <li><a href="`+items[i].link+`">`+items[i].title+`</a></li>

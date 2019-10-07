@@ -89,6 +89,15 @@
             $(this).toggleClass('is--open')
             $(this).siblings('ul').slideToggle()
         })
+
+        $('.t-menu__mobile button').on('click', function() {
+            $('body').addClass('is--t-menu')
+            openOverlay()
+        })
+
+        $('.t-menu__inner button.is--close').on('click', function() {
+            closeOverlay()
+        })
         
     })
 })(jQuery);

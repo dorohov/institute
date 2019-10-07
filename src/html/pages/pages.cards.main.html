@@ -1,0 +1,39 @@
+<div class="cards">
+    @@include('../simple/simple.pageheader.html', {
+        "title": "Специалисту системы <br> образования",
+        "bg": "on",
+        "right": "none"
+    })
+    @@include('../simple/simple.search.html', {
+        "style": "heading",
+        "text": "Сопровождение системы <br> образования "
+    })
+    <div class="cards__list container">
+        <div class="cards__list__inner">
+            @@include('pages.cards.block.html', {
+                "icon": "cards1",
+                "title": "Дошкольное <br> образование"
+            })
+            @@include('pages.cards.block.html', {
+                "icon": "cards2",
+                "title": "Начальное общее <br> образование"
+            })
+            @@include('pages.cards.block.html', {
+                "icon": "cards3",
+                "title": "Среднее общее <br> образование"
+            })
+            @@include('pages.cards.block.html', {
+                "icon": "cards4",
+                "title": "Среднее <br> профессиональное <br> образование"
+            })
+            @@include('pages.cards.block.html', {
+                "icon": "cards5",
+                "title": "Психолого- <br> педагогическое <br> сопровождение "
+            })
+            @@include('pages.cards.block.html', {
+                "icon": "cards6",
+                "title": "Инклюзивное <br> образование"
+            })
+        </div>
+    </div>
+</div>

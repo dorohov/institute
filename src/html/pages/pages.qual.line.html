@@ -1,0 +1,18 @@
+<div class="qual__line">
+    <div class="qual__line__inner">
+        <div class="qual__line__title">@@title</div>
+        <div class="qual__line__time">@@time ч.</div>
+        <div class="qual__line__price">@@price &#8381;</div>
+        <div class="qual__line__btns">
+            <a href="#" class="btn-inv">
+                @@include('../components/component.svg.html', {"name": "pdf"})
+                Документ PDF
+            </a>
+            @@include('../components/component.btn.html', {
+                "text": "заявка",
+                "url": "@@pages.form",
+                "type": "link"
+            })
+        </div>
+    </div>
+</div>

@@ -38,5 +38,23 @@
                 }
             }
         }
+        &.is--heading-search {
+            input[type="text"] {
+                width: 100%;
+            }
+            button {
+                position: absolute;
+                padding: 0;
+                border: 0;
+                background: none;
+                cursor: pointer;
+                right: 10px;
+                top: 50%;
+                margin-top: -11px;
+                svg {
+                    fill: $c-primary;
+                }
+            }
+        }
     }
 }

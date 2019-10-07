@@ -5,6 +5,13 @@
         $('#overlay').on('click', function() {
             closeOverlay()
         })
+
+        $('.edu__line__title').on('click', function() {
+            $(this).siblings('.edu__line__content').slideToggle()
+            $(this).toggleClass('is--open')
+        }) 
+
+        $('.edu__line__content').slideUp()
         
         function setPaddings() {
 

@@ -8,6 +8,7 @@
         "index": "index.html",
         "typ_page1": "typ_page1.html",
         "typ_page2": "typ_page3.html",
-        "typ_page3": "typ_page2.html"
+        "typ_page3": "typ_page2.html",
+        "form": "form.html"
     }
 }
