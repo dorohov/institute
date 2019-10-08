@@ -1,6 +1,8 @@
 <div class="search-panel is--@@style">
     <div class="search-panel__inner container">
-        <div class="search-panel__heading">@@text</div>
+        @@if(style == "heading") {
+            <div class="search-panel__heading">@@text</div>
+        }
         <div class="search-panel__search">
             <form action="">
                 <div class="form-field is--heading-search">

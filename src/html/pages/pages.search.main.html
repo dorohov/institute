@@ -1,0 +1,52 @@
+<div class="search">
+    @@include('../simple/simple.pageheader.html', {
+        "title": "Результаты <br> поиска",
+        "bg": "on",
+        "right": "none"
+    })
+    <div class="search__inner container">
+        @@include('../simple/simple.search.html', {
+            "style": "none"
+        })
+        <div class="search__list">
+            @@include('../simple/simple.docslist.html', {
+                "date": false,
+                "size": "is4",
+                "items": [
+                    {
+                        "icon": "pdf",
+                        "title": "О проведении октябрьской <br> программы в Сириусе"
+                    },
+                    {
+                        "icon": "pdf",
+                        "title": "Приказ департамента <br> образования 2918"
+                    },
+                    {
+                        "icon": "pdf",
+                        "title": "Завершила работу тематическая <br> смета для одаренных детей"
+                    },
+                    {
+                        "icon": "pdf",
+                        "title": "Важная информация. <br> Обращаем Ваше внимание!"
+                    },
+                    {
+                        "icon": "pdf",
+                        "title": "О проведении октябрьской <br> программы в Сириусе"
+                    },
+                    {
+                        "icon": "pdf",
+                        "title": "Приказ департамента <br> образования 2918"
+                    },
+                    {
+                        "icon": "pdf",
+                        "title": "Завершила работу тематическая <br> смета для одаренных детей"
+                    },
+                    {
+                        "icon": "pdf",
+                        "title": "Важная информация. <br> Обращаем Ваше внимание!"
+                    }
+                ]
+            })
+        </div>
+    </div>
+</div>

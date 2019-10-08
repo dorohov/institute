@@ -2,6 +2,15 @@
     "use strict"
     $(function() {
 
+        $('.news__menu__inner ul').slick({
+            prevArrow: '.news__menu__navs button.is--prev',
+            nextArrow: '.news__menu__navs button.is--next',
+            variableWidth: true,
+            infinite: false,
+            slidesToScroll: 3,
+            swipe: false
+        })
+
         $('#overlay').on('click', function() {
             closeOverlay()
         })
@@ -81,6 +90,7 @@
             }
             $('html,body').animate({scrollTop: $(aid).offset().top - $('.navbar').innerHeight()},'slow');
         })
+
         
     })
 })(jQuery);

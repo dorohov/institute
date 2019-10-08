@@ -1,5 +1,22 @@
 <div class="pageheader is--bg-@@bg">
     <div class="pageheader__inner container">
         <div class="pageheader__left">@@title</div>
+        @@if(right == 'year') {
+            <div class="pageheader__right">
+                <form class="pageheader__year">
+                    <div class="select">
+                        <select name="" id="">
+                            <option value="" disabled selected>Выберите год</option>
+                            <option value="">2019</option>
+                            <option value="">2018</option>
+                            <option value="">2017</option>
+                            <option value="">2016</option>
+                            <option value="">2015</option>
+                            <option value="">2014</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        }
     </div>
 </div>
