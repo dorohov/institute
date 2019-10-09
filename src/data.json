@@ -13,6 +13,7 @@
         "contacts": "contacts.html",
         "search": "search.html",
         "article": "article.html",
-        "article.full": "article.full.html"
+        "article.full": "article.full.html",
+        "news": "news.html"
     }
 }
