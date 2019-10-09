@@ -11,6 +11,8 @@
         "typ_page3": "typ_page2.html",
         "form": "form.html",
         "contacts": "contacts.html",
-        "search": "search.html"
+        "search": "search.html",
+        "article": "article.html",
+        "article.full": "article.full.html"
     }
 }

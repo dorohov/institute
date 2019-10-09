@@ -1,0 +1,36 @@
+<div id="modal_form" class="modal">
+    <div class="modal__heading">Задайте вопрос</div>
+    <form class="modal__form">
+        <div class="form-field">
+            <input type="text" placeholder="Ваше ФИО">
+        </div>
+        <div class="form-field">
+            <input type="text" placeholder="Телефон или e-mail">
+        </div>
+        <div class="form-field">
+            <input type="text" placeholder="Ваш вопрос">
+        </div>
+        <div class="form-field is--submit">
+            @@include('../components/component.btn.html', {
+                "text": "отправить вопрос",
+                "url": "#",
+                "type": "submit"
+            })
+        </div>
+        <div class="form__cop">
+            <div class="form__cop__check">
+                <div class="form-check">
+                    <input type="checkbox" id="check1">
+                    <label for="check1" class="is--box"></label>
+                </div>
+            </div>
+            <div class="form__cop__text">
+                <label for="check1">
+                    Я даю согласие на обработку моих персональных данных в соответствии с №152-ФЗ 
+                    «О персональных данных» и принимаю <a href="#">условия Пользовательского соглашения</a>.
+                    Я ознакомлен с Условиями зачисления на обучение.
+                </label>
+            </div>
+        </div>
+    </form>
+</div>

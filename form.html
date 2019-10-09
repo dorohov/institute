@@ -179,7 +179,7 @@
                             <div class="navbar__big__menu__heading"><a href="#">Мониторинг</a></div>
                         </div>
                         <div class="navbar__big__menu">
-                            <div class="navbar__big__menu__heading"><a href="@@pages.contacts">Контакты</a></div>
+                            <div class="navbar__big__menu__heading"><a href="contacts.html">Контакты</a></div>
                         </div>
                     </div>
                     <div class="navbar__big__col">
@@ -219,7 +219,7 @@
                         <li><a class="is--drop" data-id="1" href="#">Аттестация</a></li>
                         <li><a href="#">Записаться на курс</a></li>
                         <li><a href="#">Мониторинг</a></li>
-                        <li><a href="@@pages.contacts">Контакты</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="aside__main__list">
@@ -411,17 +411,17 @@
                 <form action="#" class="form__wrap">
                     <div class="form__col">
                         <div class="form-field">
-                            <input type="text" placeholder="Ваше ФИО">
+                            <input type="text" placeholder="Ваше ФИО" required>
                         </div>
                     </div>
                     <div class="form__col">
                         <div class="form-field">
-                            <input type="text" placeholder="Телефон">
+                            <input type="text" placeholder="Телефон" required class="in-phone">
                         </div>
                     </div>
                     <div class="form__col">
                         <div class="form-field">
-                            <input type="text" placeholder="Электронная почта">
+                            <input type="text" placeholder="Электронная почта" required>
                         </div>
                     </div>
                     <div class="form__col">
@@ -432,6 +432,8 @@
 
 
                             <button class="btn" type="submit">свяжитесь со мной <span class="btn-circle"></span></button>
+
+
 
                         </div>
                     </div>
@@ -536,11 +538,13 @@
                     </ul>
                     <div class="footer__social__btn">
 
-                        <a href="#" class="btn">Задать вопрос <span class="btn-circle"></span></a>
 
 
 
 
+
+
+                        <a href="#modal_form" class="btn modal-open">Задать вопрос <span class="btn-circle"></span></a>
 
                     </div>
                 </div>
@@ -555,16 +559,58 @@
         </div>
     </footer>
     <div id="overlay"></div>
-    <!-- modals -->
+    <div id="modal_form" class="modal">
+        <div class="modal__heading">Задайте вопрос</div>
+        <form class="modal__form">
+            <div class="form-field">
+                <input type="text" placeholder="Ваше ФИО">
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Телефон или e-mail">
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Ваш вопрос">
+            </div>
+            <div class="form-field is--submit">
+
+
+
+
+
+                <button class="btn" type="submit">отправить вопрос <span class="btn-circle"></span></button>
+
+
+
+            </div>
+            <div class="form__cop">
+                <div class="form__cop__check">
+                    <div class="form-check">
+                        <input type="checkbox" id="check1">
+                        <label for="check1" class="is--box"></label>
+                    </div>
+                </div>
+                <div class="form__cop__text">
+                    <label for="check1">
+                        Я даю согласие на обработку моих персональных данных в соответствии с №152-ФЗ
+                        «О персональных данных» и принимаю <a href="#">условия Пользовательского соглашения</a>.
+                        Я ознакомлен с Условиями зачисления на обучение.
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="modal_success" class="modal is--s">
+        <a href="#" rel="modal:close" class="is--close">
+            <svg class="svg-m_close-dims svg is--m_close">
+                <use xlink:href="img/svg/sprites.svg#m_close"></use>
+            </svg>
+        </a>
+        <div class="modal__heading">Ваше сообщение отправлено!</div>
+        <div class="modal__sub">В ближайшее время с Вами свяжутся</div>
+    </div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/imask.js"></script>
-    <script src="dist/js/jquery.modal.min.js"></script>
-    <script src="dist/js/parsley.min.js"></script>
-    <script src="dist/js/i18n/ru.js"></script>
-    <script src="dist/js/slick.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e83b3879-a556-4f66-bb57-22a72a256b7b&amp;width=auto" type="text/javascript"></script>
-    <script src="dist/js/main.js"></script>
-    <script src="dist/js/svg4everybody.min.js"></script>
+    <script src="dist/js/bundle-min.js"></script>
     <script>
         svg4everybody();
     </script>

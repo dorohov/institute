@@ -11,3 +11,4 @@ openModal(modalID);
 #### IDs:
 
 - #modal_form - Форма
+- #modal_success - Успешная отправка формы

@@ -4,6 +4,10 @@
     width: 100%;
     top: 0;
     left: 0;
+    transition: .25s all ease;
+    &.is--scroll {
+        transform: translateY(-100%);
+    }
     &__top {
         position: relative;
         z-index: 10;

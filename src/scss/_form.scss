@@ -163,6 +163,32 @@ select::-ms-expand {
     display: none;
 }
 
+.parsley-errors-list.filled {
+    height: auto;
+    background: $c-primary;
+    color: #fff;
+    border-radius: 3px;
+    top: calc(100% + 10px);
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 9;
+    &::after {
+        bottom: 100%;
+        left: 10px;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $c-primary;
+        border-width: 6px;
+    }
+}
+
 @media (max-width: 1250px) {
     .form {
         &__col {

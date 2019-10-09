@@ -31,19 +31,57 @@
     vertical-align: middle;
     position: relative;
     z-index: 2;
-    max-width: 640px;
+    max-width: 710px;
     box-sizing: border-box;
     width: 90%;
-    background-color: #f7f7f7;
+    background-color: #FFFFFF;
     text-align: center;
-    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);
-    padding: 65px 20px;
-    background-image: url(../../img/modal_bg.png);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.13);
+    padding: 75px 160px 70px 160px;    
+    color: #334059;
+    &.is--s {
+        max-width: 535px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     &__heading {
+        font-weight: 500;
         font-size: 36px;
-        font-family: 'Politica';
-        font-weight: 600;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
+    }
+    &__form {
+        .form-field {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.is--submit {
+                padding-top: 30px;
+            }
+            input, button {
+                width: 100%;
+            }
+        }
+        .form__cop {
+            text-align: left;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 30px;
+        }
+    }
+    a.is--close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 56px;
+        height: 56px;
+        background: $c-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            fill: #fff;
+        }
     }
 }
 
@@ -116,11 +154,24 @@
 @media (max-width: 768px) {
     .modal {
         background: #fff;
-        padding-top: 45px;
+        padding-top: 55px;
         padding-bottom: 45px;
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
         &__heading {
-            font-size: 22px;
-            margin-bottom: 30px;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .form-field {
+            padding-top: 10px !important;
+        }
+        .form__cop {
+            padding-top: 20px;
+        }
+        a.is--close {
+            width: 40px;
+            height: 40px;
         }
     }
 }

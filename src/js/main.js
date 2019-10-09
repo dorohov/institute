@@ -2,13 +2,36 @@
     "use strict"
     $(function() {
 
+
+        var phoneInputs = document.getElementsByClassName('in-phone');
+
+        if(phoneInputs.length) {
+            for(var i = 0; i < phoneInputs.length; i++) {
+                new IMask(
+                    phoneInputs[i], {
+                    mask: '+{7}(900)000-00-00'
+                });
+            }
+        }
+
+
+        $('form').parsley()
+
         $('.news__menu__inner ul').slick({
             prevArrow: '.news__menu__navs button.is--prev',
             nextArrow: '.news__menu__navs button.is--next',
             variableWidth: true,
             infinite: false,
             slidesToScroll: 3,
-            swipe: false
+            swipe: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToScroll: 1,
+                    }
+                }
+            ]
         })
 
         $('#overlay').on('click', function() {
