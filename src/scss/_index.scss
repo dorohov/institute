@@ -428,10 +428,6 @@
 @media (max-width: 550px) {
     .banner {
         padding: 30px 0 50px 0;
-        &__inner {
-            padding-right: 15px;
-            padding-left: 15px;
-        }
         &__carousel {
             display: none;
         }

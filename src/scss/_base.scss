@@ -25,6 +25,7 @@ body {
         }
     }
     &.is--overlay {
+        overflow: hidden;
         #overlay {
             display: block;
         }

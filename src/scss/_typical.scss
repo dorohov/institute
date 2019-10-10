@@ -12,6 +12,8 @@
     &-menu {
         border-bottom: 1px solid #E3EAFD;
         &__inner {
+            overflow: auto;
+            padding-bottom: 50px;
             button.is--close {
                 display: none;
             }

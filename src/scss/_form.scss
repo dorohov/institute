@@ -23,13 +23,14 @@
         display: flex;
         &__check {
             margin-right: 7px;
+            position: relative;
         }
         &__text {
             font-size: 14px;
             line-height: 138.5%;
             color: rgba(51, 64, 89, 0.71);
             a {
-                color: rgba(51, 64, 89, 0.71);
+                color: $c-primary;
                 &:hover {
                     text-decoration: underline;
                 }
@@ -95,6 +96,7 @@
         }
     }
     &-check {
+        position: relative;
         input {
             display: none;
             &:checked ~ label.is--box {

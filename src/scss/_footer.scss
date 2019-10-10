@@ -58,6 +58,11 @@
                     svg {
                         fill: $c-primary;
                     }
+                    &:hover {
+                        svg {
+                            fill: #334059;
+                        }
+                    }
                 }
             }
         }

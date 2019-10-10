@@ -72,10 +72,10 @@
         height: 260px;
     }
     &.is--bg-on {
-        background: url(../../img/page_cover.jpg);
+        background-image: url(../../img/page_cover.jpg);
     }
     &.is--bg-tw {
-        background: url(../../img/page_cover2.jpg);
+        background-image: url(../../img/page_cover2.jpg);
     }
     &__left {
         color: #fff;
@@ -271,6 +271,28 @@
     &__block {
         width: 100%;
         padding: 0 15px;
+        position: relative;
+        &::after {
+            content: '';
+            height: 52px;
+            width: 1px;
+            background: #E3EAFD;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+        }
+        &:nth-child(4n) {
+            &::after {
+                content: none;
+            }
+        }
+        &:last-child {
+            &::after {
+                content: none !important;
+            }
+        }
         &__inner {
             display: flex;
             align-items: center;
@@ -482,6 +504,8 @@
             &__left {
                 position: static;
                 order: 1;
+                width: 100%;
+                text-align: left;
                 br {
                     display: none;
                 }
@@ -529,6 +553,16 @@
         }
         &__block {
             max-width: 50%;
+            &:nth-child(3n) {
+                &::after {
+                    content: '';
+                }
+            }
+            &:nth-child(2n) {
+                &::after {
+                    content: none;
+                }
+            }
         }
     }
     .pageheader {
@@ -568,6 +602,9 @@
         }
         &__block {
             max-width: 100%;
+            &::after {
+                content: none !important;
+            }
             br {
                 display: none;
             }

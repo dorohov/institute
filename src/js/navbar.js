@@ -104,13 +104,12 @@
         $(document).scroll(function(e) {
             var st = $(this).scrollTop()
             if (st > lastScrollTop) {
-                if(st > 200) {
+                if(st > 200 && $('body').innerWidth() > 1080) {
                     $('.navbar').addClass('is--scroll')
                     $('body').removeClass('is--bm-open')
                     $('.navbar__bottom__btn button').removeClass('is--active')
                 }
             } else {
-                console.log('up')
                 $('.navbar').removeClass('is--scroll')
             }
             lastScrollTop = st
