@@ -23,6 +23,8 @@
             var isDropdown = $(this).data('dropdown') || false
 
             if(isDropdown) {
+                $('body').removeClass('is--bm-open')
+                $('.navbar__bottom__btn button').removeClass('is--active')
                 var dropdown = $('._navbar-menu[data-dropdown="' + isDropdown + '"]')
                 var level = $(dropdown).data('level')
                 showDropdown(dropdown, level, _this)
