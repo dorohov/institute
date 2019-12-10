@@ -22,8 +22,8 @@ function changeMode() {
 
 var _currentMode = localStorage.getItem('mode')
 
-if(_currentMode == 'normal') {
-    setDefaultMode();
-}else {
+if(_currentMode == 'eye') {
     setEyeMode();
+}else {
+    setDefaultMode();
 }
