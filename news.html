@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Новости — Институт развития образования</title>
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css" id="defaultstyles">
 </head>
 
 <body>
@@ -22,6 +22,16 @@
                             </svg>
                         </button>
                     </div>
+                </div>
+                <div class="navbar__top__eye">
+                    <button onclick="changeMode();">
+                        <svg class="svg-eye-dims svg is--eye">
+                            <use xlink:href="img/svg/sprites.svg#eye"></use>
+                        </svg>
+                        <span>
+                            Для слабовидящих
+                        </span>
+                    </button>
                 </div>
                 <div class="navbar__top__info">
                     <ul>
@@ -89,7 +99,7 @@
                         <li><a href="typ_page1.html">Сведения об образовательной <br> организации</a></li>
                         <li><a class="is--dropdown" data-dropdown="1" href="typ_page3.html">Образовательная <br> деятельность</a></li>
                         <li><a class="is--dropdown" data-dropdown="2" href="typ_page2.html">Научно-методическая <br> деятельность</a></li>
-                        <li><a href="edu.html">Сопровождение <br> системы образования</a></li>
+                        <li><a class="is--active" href="edu.html">Сопровождение <br> системы образования</a></li>
                         <li><a href="cards.html">Конкурсы, <br> олимпиады</a></li>
                         <li><a href="qual.html">Одаренные <br> дети</a></li>
                         <li><a href="#">Аттестация</a></li>

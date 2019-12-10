@@ -10,11 +10,27 @@
     }
     &__top {
         position: relative;
-        z-index: 10;
+        z-index: 20;
         background: $c-primary;
         &__search {
             max-width: 245px;
             width: 100%;
+        }
+        &__eye {
+            padding-left: 30px;
+            button {
+                padding: 0;
+                border: none;
+                background: transparent;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                svg {
+                    fill: #ffffff;
+                    margin-right: 10px;
+                }
+            }
         }
         &__inner {
             height: 60px;
@@ -70,7 +86,7 @@
     &__bottom {
         border-bottom: 1px solid #E3EAFD;
         position: relative;
-        z-index: 10;
+        z-index: 20;
         background: #fff;
         &__inner {
             height: 89px;
@@ -511,6 +527,21 @@
 
 @media (max-width: 1440px) {
     .navbar {
+        &__top {
+            &__links {
+                margin-left: 30px;
+            }
+            &__info {
+                ul {
+                    li {
+                        margin-left: 15px;
+                        a, span {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
         &__bottom__menu ul li a,
         &__dropdown__inner ul li a {
             padding: 0 10px;
@@ -546,9 +577,10 @@
     .navbar {
         &__top {
             &__links {
-                margin-left: 50px;
+                margin-left: auto;
             }
             &__info {
+                display: none;
                 ul {
                     li {
                         margin-left: 20px;
@@ -602,6 +634,11 @@
 @media (max-width: 768px) {
     .navbar {
         &__top {
+            &__eye {
+                span {
+                    display: none;
+                }
+            }
             &__search {
                 max-width: 100%;
             }

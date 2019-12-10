@@ -1,0 +1,198 @@
+* {
+    background: #fff;
+    border-color: #000 !important;
+    color: #000 !important;
+    svg {
+        fill: #000 !important;
+    }
+}
+
+#map {
+    * {
+        background: transparent;
+    }
+}
+
+.banner {
+    &__carousel,
+    &__news {
+        &__inner {
+            border: 1px solid #000;
+        }
+    }
+    &__cal {
+        border: 1px solid #000;
+    }
+}
+
+.pageheader,
+.t-menu__inner ul li a,
+.banner,
+.banner *,
+.cards__block__top span {
+    background: #fff !important;
+}
+
+.article ul li::before {
+    opacity: 0;
+}
+
+.navbar {
+    &__top,
+    &__big {
+        background: #fff;
+    }
+    &__bottom {
+        &__menu {
+            ul {
+                li {
+                    a {
+                        &::after {
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__dropdown {
+        &__inner {
+            ul {
+                li {
+                    a {
+                        &::after {
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__top {
+        &__info {
+            ul {
+                li {
+                    a, span {
+                        font-size: 18px;
+                        @media (max-width: 1600px) {
+                            font-size: 14px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.docslist {
+    &__block {
+        &__left {
+            display: none;
+        }
+        &__right {
+            &__title {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+.footer {
+    background: #fff;
+    &__menu {
+        ul {
+            li {
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    &__lc {
+        &__copy {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+.qual {
+    &__line {
+        &__title {
+            font-size: 20px;
+        }
+    }
+}
+
+.cards {
+    &__block {
+        &__title {
+            font-size: 20px;
+        }
+    }
+}
+
+.btn, .btn-inv {
+    border: 1px solid #000 !important;
+    background: #fff !important;
+}
+
+.news {
+    &__menu {
+        &__inner {
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    &__block {
+        &__date {
+            padding: 20px 30px;
+            font-size: 16px;
+        }
+        &__inner {
+            box-shadow: none;
+            border: 1px solid #000;
+        }
+        &__content {
+            &__title {
+                font-size: 20px;
+            }
+            &__desc {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.select select {
+    font-size: 18px;
+}
+
+.aside {
+    &__main {
+        background: #fff;
+        &__menu {
+            ul {
+                li {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        &__list {
+            ul {
+                li {
+                    span, a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
