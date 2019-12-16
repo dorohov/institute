@@ -30,15 +30,21 @@
                 showDropdown(dropdown, level, _this)
             }else {
                 var currentLevel = $(this).parents('._navbar-menu').data('level')
-                if(!currentLevel) hideDropdown('on')
-                if(currentLevel == 'on') hideDropdown('tw')
+                // вспомнить
+                // if(!currentLevel) hideDropdown('on')
+                // if(!currentLevel == 'on') hideDropdown('tw'); hideDropdown('th'); hideDropdown('fo'); hideDropdown('fv');
+                // if(!currentLevel == 'tw') hideDropdown('th'); hideDropdown('fo'); hideDropdown('fv');
+                // if(!currentLevel == 'th') hideDropdown('fo'); hideDropdown('fv');
+                // if(!currentLevel == 'fo') hideDropdown('vf');
             }
-
         }, function() {})
 
         $('.navbar').hover(function() {}, function() {
             hideDropdown('on')
             hideDropdown('tw')
+            hideDropdown('th')
+            hideDropdown('fo')
+            hideDropdown('fv')
         })
 
         $('.banner__carousel__items').slick({
