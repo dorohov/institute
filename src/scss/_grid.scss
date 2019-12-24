@@ -284,16 +284,6 @@
             bottom: 0;
             margin: auto 0;
         }
-        &:nth-child(4n) {
-            &::after {
-                content: none;
-            }
-        }
-        &:last-child {
-            &::after {
-                content: none !important;
-            }
-        }
         &__inner {
             display: flex;
             align-items: center;
