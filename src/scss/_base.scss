@@ -75,3 +75,7 @@ img {
     cursor: pointer;
     display: none;
 }
+
+*[itemprop="image"] {
+    width: auto;
+}
