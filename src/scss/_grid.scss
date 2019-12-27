@@ -423,6 +423,12 @@
     }
 }
 
+.t-text__inner {
+    img {
+        width: auto;
+    }
+}
+
 @media (max-width: 1440px) {
     .docslist {
         &__list {

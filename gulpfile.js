@@ -151,6 +151,7 @@ function createBundleJs() {
                 './dist/js/i18n/ru.js',
                 './dist/js/slick.min.js',
                 './dist/js/main.js',
+                './dist/js/jquery.fancybox.min.js',
                 './dist/js/svg4everybody.min.js'
             ])
             .pipe(sourcemaps.init())
