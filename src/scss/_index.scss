@@ -292,6 +292,10 @@
                     &:last-child {
                         display: none;
                     }
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        display: flex !important;
+                    }
                 }
             }
         }
